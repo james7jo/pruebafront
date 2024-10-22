@@ -1,34 +1,33 @@
-body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #f9f7f3;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+import styled from "styled-components";
 
-.container {
+export const ContainerInicio = styled.div`
   text-align: center;
   padding: 2rem;
-}
+`;
 
-.header {
+export const Header = styled.header`
   background-color: #ffe4b5;
   padding: 3rem 1rem;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
+`;
 
-.header h1 {
+export const H1 = styled.h1`
   color: #ff7b54;
   font-size: 3rem;
-}
+`;
 
-.header p {
+export const Parrafo = styled.p`
   color: #555;
   font-size: 1.2rem;
-}
+`;
+export const ParrafoFeature = styled.p`
+  color: #555;
+  font-size: 1.5rem;
+  
+`;
 
-.cta-button {
+export const Button = styled.button`
   background-color: #ff7b54;
   color: #fff;
   padding: 1rem 2rem;
@@ -38,47 +37,39 @@ body {
   margin-top: 1rem;
   display: inline-block;
   transition: background-color 0.3s;
-}
-
-.cta-button:hover {
-  background-color: #ff5a36;
-}
-
-.features {
+  &:hover {
+    background-color: #ff5a36;
+  }
+`;
+export const Features = styled.section`
   display: flex;
   justify-content: center;
   gap: 2rem;
   margin-top: 2rem;
-}
+`;
 
-.feature {
+export const Feature = styled.div`
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   padding: 1rem;
   width: 300px;
-}
+`;
 
-.feature h2 {
+export const Titulo2 = styled.h2`
   color: #ff7b54;
   font-size: 1.8rem;
-}
+`;
 
-.feature p {
-  color: #555;
-  font-size: 1rem;
-}
-
-.feature-image {
+export const Img = styled.image`
   width: 100%;
   height: auto;
   margin-bottom: 1rem;
-}
-
-.footer {
+`;
+export const Footer = styled.footer`
   background-color: #ff7b54;
   color: #fff;
   padding: 1rem;
   margin-top: 3rem;
   border-radius: 0 0 10px 10px;
-}
+`;

@@ -1,20 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import Component from '../src/section/Component'
-import CrearCuentaButton from "./components/CrearCuentaButton"; 
-
-
+import Layout from "./pages/public/_layout";
+import Informacion from "./pages/public/informacion";
+import Inicio from "./pages/public/inicio";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Contacto from "./pages/public/contacto";
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <>
-      <Component/>
-    </>
-
-  )
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route path="/" element={<Inicio />} />
+          <Route path="/informacion" element={<Informacion />} />
+          <Route path="/contacto" element={<Contacto />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
-export default App
-
+export default App;
